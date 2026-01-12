@@ -41,3 +41,13 @@ htmlcov/
 # Environment variables
 .env
 .env.local
+
+# Private business documents (keep these local only!)
+LAUNCH_GUIDE.md
+CHECKLIST.md
+START_HERE.md
+RENDER_DEPLOY.md
+setup_github.sh
+.server_pid
+server.log
+test_api.py
