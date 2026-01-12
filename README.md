@@ -24,6 +24,7 @@ DataGuard is a high-performance API that scrubs Personally Identifiable Informat
 - **🐳 Docker Ready**: Production-ready container included
 - **📊 Detailed Reporting**: Get redaction counts and breakdowns
 - **🎯 Enterprise Grade**: Luhn algorithm validation for credit cards
+- **🔓 Open Source**: Free to use and modify
 
 ## 📦 Quick Start
 
@@ -114,30 +115,11 @@ DataGuard/
 
 ## 🎯 Use Cases
 
-1. **LLM Input Sanitization**: Clean prompts before sending to ChatGPT/Claude
-2. **Compliance Automation**: Ensure GDPR/CCPA compliance automatically
-3. **Document Sharing**: Strip metadata before sharing files externally
-4. **Data Pipeline Protection**: Add as middleware in your data flow
-5. **Agency Protection**: Protect client data in AI automation workflows
-
-## 💰 Monetization Paths
-
-### Path 1: Public API (RapidAPI)
-- Deploy to Fly.io or Railway
-- List on RapidAPI marketplace
-- Free tier: 100 calls/month
-- Pro tier: $10/month for 10k calls
-
-### Path 2: Enterprise License
-- Sell Docker image + license
-- One-time payment: $299
-- Unlimited use, self-hosted
-- Target: CTOs, compliance officers, fintech startups
-
-### Path 3: Agency Partnerships
-- Reach out to AI automation agencies
-- They need PII protection for client work
-- Position as "AI Firewall" for liability reduction
+- **LLM Input Sanitization**: Clean prompts before sending to ChatGPT/Claude
+- **Compliance Automation**: Ensure GDPR/CCPA compliance automatically
+- **Document Sharing**: Strip metadata before sharing files externally
+- **Data Pipeline Protection**: Add as middleware in your data flow
+- **Developer Tools**: Integrate into CI/CD for automated data sanitization
 
 ## 🔒 Security Features
 
@@ -163,38 +145,33 @@ DataGuard/
 - **PDF Processing**: PyPDF2 3.0.1
 - **Validation**: Pydantic 2.5.3
 
+## � Deployment
+
+DataGuard can be deployed anywhere Docker runs:
+
+```bash
+# Docker
+docker build -t dataguard .
+docker run -p 8000:8000 dataguard
+
+# Docker Compose
+docker-compose up -d
+```
+
+Cloud platforms: AWS ECS, Google Cloud Run, Azure Container Instances, Fly.io, Railway, Render, etc.
+
 ## 📝 License
 
-All rights reserved. This is proprietary software.
+MIT License - Free to use, modify, and distribute.
 
-For licensing inquiries: [your-email@example.com]
+## 🤝 Contributing
 
-## 🚀 Deployment Options
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-### Fly.io
-```bash
-fly launch
-fly deploy
-```
+## 📧 Contact
 
-### Railway
-```bash
-railway login
-railway init
-railway up
-```
-
-### AWS ECS / Kubernetes
-Use the included Dockerfile with your orchestration platform.
-
-## 🎓 Support
-
-For enterprise support, custom integrations, or white-label licensing:
-- Email: [your-email@example.com]
-- Twitter: [@your-handle]
+For questions or support, please open an issue on GitHub.
 
 ---
 
-**Built for the paranoid. Priced for the practical.**
-
-*DataGuard - Because your data should never leave your walls.*
+**DataGuard - Local PII scrubbing for secure AI applications.**
